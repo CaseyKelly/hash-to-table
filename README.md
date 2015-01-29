@@ -7,7 +7,7 @@ Take the array of hashes named @people on the people/index page and display them
   :first_name=>"Julia", :last_name=>"White",
  :date_of_birth=>Sun, 29 Jan 1995, :eye_color=>"hazel",
  :telephone_number=>"547-161-2114",
- :dog => {name: => "Joe", breed: => "golden", age: => 15}
+ :dog => {:name => "Joe", :breed => "golden", :age => 15}
 
  }
 
