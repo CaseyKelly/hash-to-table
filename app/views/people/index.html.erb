@@ -18,7 +18,15 @@
   <% @people.each do |person| %>
 
   <tbody>
-
+    <tr>
+      <td><%= person[:first_name] %></td>
+      <td><%= person[:last_name] %></td>
+      <td><%= person[:date_of_birth] %></td>
+      <td><%= person[:eye_color] %></td>
+      <td><%= person[:telephone_number] %></td>
+      <td><%= person[:dog][:name] %></td>
+      <td><%= person[:dog][:breed] %></td>
+      <td><%= person[:dog][:age] %></td>
   </tbody>
   <% end %>
 
