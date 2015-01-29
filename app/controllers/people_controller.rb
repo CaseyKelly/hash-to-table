@@ -5,11 +5,17 @@ class PeopleController < ApplicationController
       {
         first_name: Faker::Name.first_name,
         last_name: Faker::Name.last_name,
-        date_of_birth: (20.years.ago.to_date..4.years.ago.to_date),
+        date_of_birth: rand_date(10020),
         eye_color: %w(brown blue hazel green).sample,
         telephone_number: Faker::PhoneNumber.phone_number
       }
     end
   end
+
+
+  def rand_date(days)
+    rand(days).days.ago(Date.today - 10000)
+  end
+
 
 end
