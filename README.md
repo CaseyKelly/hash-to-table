@@ -12,6 +12,7 @@ Take the array of hashes named @people on the people/index page and display them
  }
 
 - you only have to use the people/index.html.erb page to complete this!
+- each person has a dog, which is it's own hash.
 
 
 gl hf
