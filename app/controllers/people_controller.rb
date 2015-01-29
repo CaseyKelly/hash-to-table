@@ -7,7 +7,11 @@ class PeopleController < ApplicationController
         last_name: Faker::Name.last_name,
         date_of_birth: rand_date(10020),
         eye_color: %w(brown blue hazel green).sample,
-        telephone_number: Faker::PhoneNumber.phone_number
+        telephone_number: Faker::PhoneNumber.phone_number,
+        dog: {:name => Faker::Name.first_name,
+              :breed => %w(beagle lab golden retriever datsun).sample,
+              :age => rand(20)
+              }
       }
     end
   end
